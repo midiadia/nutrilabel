@@ -3,171 +3,171 @@
   padding: 0 10px;
   font-family: 'Nunito';
   font-size: 14px; }
-.nutrilabel a, .nutrilabel {
-  color: #263236; }
-.nutrilabel * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-.nutrilabel html, .nutrilabel body, .nutrilabel div, .nutrilabel span, .nutrilabel applet, .nutrilabel object, .nutrilabel iframe, .nutrilabel h1, .nutrilabel h2, .nutrilabel h3, .nutrilabel h4, .nutrilabel h5, .nutrilabel h6, .nutrilabel p, .nutrilabel blockquote, .nutrilabel pre, .nutrilabel a, .nutrilabel abbr, .nutrilabel acronym, .nutrilabel address, .nutrilabel big, .nutrilabel cite, .nutrilabel code, .nutrilabel del, .nutrilabel dfn, .nutrilabel em, .nutrilabel img, .nutrilabel ins, .nutrilabel kbd, .nutrilabel q, .nutrilabel s, .nutrilabel samp, .nutrilabel small, .nutrilabel strike, .nutrilabel strong, .nutrilabel sub, .nutrilabel sup, .nutrilabel tt, .nutrilabel var, .nutrilabel b, .nutrilabel u, .nutrilabel i, .nutrilabel center, .nutrilabel dl, .nutrilabel dt, .nutrilabel dd, .nutrilabel ol, .nutrilabel ul, .nutrilabel li, .nutrilabel fieldset, .nutrilabel form, .nutrilabel label, .nutrilabel legend, .nutrilabel table, .nutrilabel caption, .nutrilabel tbody, .nutrilabel tfoot, .nutrilabel thead, .nutrilabel tr, .nutrilabel th, .nutrilabel td, .nutrilabel article, .nutrilabel aside, .nutrilabel canvas, .nutrilabel details, .nutrilabel embed, .nutrilabel figure, .nutrilabel figcaption, .nutrilabel footer, .nutrilabel header, .nutrilabel hgroup, .nutrilabel menu, .nutrilabel nav, .nutrilabel output, .nutrilabel ruby, .nutrilabel section, .nutrilabel summary, .nutrilabel time, .nutrilabel mark, .nutrilabel audio, .nutrilabel video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  outline: 0; }
-.nutrilabel html, .nutrilabel body, .nutrilabel div, .nutrilabel span, .nutrilabel applet, .nutrilabel object, .nutrilabel iframe, .nutrilabel h1, .nutrilabel h2, .nutrilabel h3, .nutrilabel h4, .nutrilabel h5, .nutrilabel h6, .nutrilabel p, .nutrilabel blockquote, .nutrilabel pre, .nutrilabel a, .nutrilabel abbr, .nutrilabel acronym, .nutrilabel address, .nutrilabel big, .nutrilabel cite, .nutrilabel code, .nutrilabel del, .nutrilabel dfn, .nutrilabel em, .nutrilabel font, .nutrilabel img, .nutrilabel ins, .nutrilabel kbd, .nutrilabel q, .nutrilabel s, .nutrilabel samp, .nutrilabel small, .nutrilabel strike, .nutrilabel strong, .nutrilabel sub, .nutrilabel sup, .nutrilabel tt, .nutrilabel var, .nutrilabel b, .nutrilabel u, .nutrilabel i, .nutrilabel center, .nutrilabel dl, .nutrilabel dt, .nutrilabel dd, .nutrilabel ol, .nutrilabel ul, .nutrilabel li, .nutrilabel fieldset, .nutrilabel form, .nutrilabel label, .nutrilabel legend, .nutrilabel table, .nutrilabel caption, .nutrilabel tbody, .nutrilabel tfoot, .nutrilabel thead, .nutrilabel tr, .nutrilabel th, .nutrilabel td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-.nutrilabel body {
-  line-height: 1; }
-.nutrilabel ol, .nutrilabel ul {
-  list-style: none; }
-.nutrilabel blockquote, .nutrilabel q {
-  quotes: none; }
-.nutrilabel blockquote:before, .nutrilabel blockquote:after, .nutrilabel q:before, .nutrilabel q:after {
-  content: '';
-  content: none; }
-.nutrilabel :focus {
-  outline: 0; }
-.nutrilabel ins {
-  text-decoration: none; }
-.nutrilabel del {
-  text-decoration: line-through; }
-.nutrilabel table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-.nutrilabel * {
-  margin: 0;
-  padding: 0px; }
-.nutrilabel article, .nutrilabel aside, .nutrilabel details, .nutrilabel figcaption, .nutrilabel figure, .nutrilabel footer, .nutrilabel header, .nutrilabel hgroup, .nutrilabel menu, .nutrilabel nav, .nutrilabel section {
-  display: block; }
-.nutrilabel body {
-  line-height: 1; }
-.nutrilabel ol, .nutrilabel ul {
-  list-style: none; }
-.nutrilabel blockquote, .nutrilabel q {
-  quotes: none; }
-.nutrilabel blockquote:before, .nutrilabel blockquote:after {
-  content: "";
-  content: none; }
-.nutrilabel q:before, .nutrilabel q:after {
-  content: "";
-  content: none; }
-.nutrilabel table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-.nutrilabel b {
-  color: #263236; }
-.nutrilabel h1 {
-  font-family: 'PT Sans';
-  font-size: 36px; }
-.nutrilabel h2 {
-  font-family: 'Nunito';
-  font-size: 19px;
-  border-bottom: 4px double #626262;
-  border-top: 4px double #626262;
-  padding: 10px 0px; }
-.nutrilabel .section {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #626262; }
-.nutrilabel .section > .header {
-  cursor: pointer;
-  padding-bottom: 10px; }
-.nutrilabel .section > .header.noborder {
-  border: 0; }
-.nutrilabel .table {
-  display: table;
-  width: 100%; }
-.nutrilabel .table[data-showbydefault=false] {
-  display: none; }
-.nutrilabel .table > * {
-  display: table-cell;
-  vertical-align: top;
-  padding: 5px 0; }
-.nutrilabel .table > .column1 {
-  width: 170px;
-  padding-right: 10px; }
-.nutrilabel .table > .column2 {
-  width: 90px;
-  text-align: left; }
-.nutrilabel .table > .column3 {
-  text-align: right; }
-.nutrilabel .chevron {
-  color: #cfd2d3; }
-.nutrilabel .serving {
-  padding-bottom: 10px;
-  padding-top: 10px; }
-.nutrilabel .serving .unitSelect {
-  border: 1px solid #626262;
-  position: relative;
-  display: inline-block;
-  margin: 0 10px;
-  vertical-align: middle; }
-.nutrilabel .serving .unitSelect > * {
-  display: table-cell;
-  vertical-align: top; }
-.nutrilabel .serving .unitSelect > div {
-  border-left: 1px solid #626262;
-  padding-left: 3px;
-  padding-right: 3px; }
-.nutrilabel .serving .unitSelect > div > a {
-  display: block;
-  font-size: 12px; }
-.nutrilabel .serving .unitSelect input.unitQuantityBox {
-  float: left;
-  width: 40px;
-  margin-top: 5px;
-  padding: 4px;
-  line-height: 15px \9;
-  border: 0;
-  font-weight: bold; }
-.nutrilabel .calories {
-  border-top: 1px solid #626262;
-  border-bottom: 1px solid #626262; }
-.nutrilabel .info {
-  font-style: italic;
-  font-size: 11px;
-  border-bottom: 4px double #626262;
-  border-top: 1px solid #626262;
-  padding: 10px 0px; }
-.nutrilabel .allergic .header {
-  border-top: 0; }
-.nutrilabel .allergic ul {
-  overflow: hidden; }
-.nutrilabel .allergic ul li {
-  float: left;
-  width: 50%; }
-.nutrilabel .allergic ul li .fa-exclamation-circle {
-  color: #e04040; }
-.nutrilabel .nutritional-values {
-  border-bottom: 0; }
-.nutrilabel .nutritional-values .header {
-  border-bottom: 1px solid #626262; }
-.nutrilabel .switcher {
-  display: table;
-  width: 100%; }
-.nutrilabel .switcher > a {
-  display: table-cell;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  width: 50%;
-  padding: 10px 0px;
-  border-bottom: 1px solid #626262; }
-.nutrilabel .switcher > a:last-child {
-  border-left: 1px solid #626262; }
-.nutrilabel .switcher > a.selected {
-  border-bottom: 0; }
-.nutrilabel .per-unit, .nutrilabel .hidden {
-  display: none; }
-.nutrilabel .short {
-  height: 50px;
-  overflow: hidden; }
+  .nutrilabel a, .nutrilabel {
+    color: #263236; }
+  .nutrilabel * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+  .nutrilabel html, .nutrilabel body, .nutrilabel div, .nutrilabel span, .nutrilabel applet, .nutrilabel object, .nutrilabel iframe, .nutrilabel h1, .nutrilabel h2, .nutrilabel h3, .nutrilabel h4, .nutrilabel h5, .nutrilabel h6, .nutrilabel p, .nutrilabel blockquote, .nutrilabel pre, .nutrilabel a, .nutrilabel abbr, .nutrilabel acronym, .nutrilabel address, .nutrilabel big, .nutrilabel cite, .nutrilabel code, .nutrilabel del, .nutrilabel dfn, .nutrilabel em, .nutrilabel img, .nutrilabel ins, .nutrilabel kbd, .nutrilabel q, .nutrilabel s, .nutrilabel samp, .nutrilabel small, .nutrilabel strike, .nutrilabel strong, .nutrilabel sub, .nutrilabel sup, .nutrilabel tt, .nutrilabel var, .nutrilabel b, .nutrilabel u, .nutrilabel i, .nutrilabel center, .nutrilabel dl, .nutrilabel dt, .nutrilabel dd, .nutrilabel ol, .nutrilabel ul, .nutrilabel li, .nutrilabel fieldset, .nutrilabel form, .nutrilabel label, .nutrilabel legend, .nutrilabel table, .nutrilabel caption, .nutrilabel tbody, .nutrilabel tfoot, .nutrilabel thead, .nutrilabel tr, .nutrilabel th, .nutrilabel td, .nutrilabel article, .nutrilabel aside, .nutrilabel canvas, .nutrilabel details, .nutrilabel embed, .nutrilabel figure, .nutrilabel figcaption, .nutrilabel footer, .nutrilabel header, .nutrilabel hgroup, .nutrilabel menu, .nutrilabel nav, .nutrilabel output, .nutrilabel ruby, .nutrilabel section, .nutrilabel summary, .nutrilabel time, .nutrilabel mark, .nutrilabel audio, .nutrilabel video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0; }
+  .nutrilabel html, .nutrilabel body, .nutrilabel div, .nutrilabel span, .nutrilabel applet, .nutrilabel object, .nutrilabel iframe, .nutrilabel h1, .nutrilabel h2, .nutrilabel h3, .nutrilabel h4, .nutrilabel h5, .nutrilabel h6, .nutrilabel p, .nutrilabel blockquote, .nutrilabel pre, .nutrilabel a, .nutrilabel abbr, .nutrilabel acronym, .nutrilabel address, .nutrilabel big, .nutrilabel cite, .nutrilabel code, .nutrilabel del, .nutrilabel dfn, .nutrilabel em, .nutrilabel font, .nutrilabel img, .nutrilabel ins, .nutrilabel kbd, .nutrilabel q, .nutrilabel s, .nutrilabel samp, .nutrilabel small, .nutrilabel strike, .nutrilabel strong, .nutrilabel sub, .nutrilabel sup, .nutrilabel tt, .nutrilabel var, .nutrilabel b, .nutrilabel u, .nutrilabel i, .nutrilabel center, .nutrilabel dl, .nutrilabel dt, .nutrilabel dd, .nutrilabel ol, .nutrilabel ul, .nutrilabel li, .nutrilabel fieldset, .nutrilabel form, .nutrilabel label, .nutrilabel legend, .nutrilabel table, .nutrilabel caption, .nutrilabel tbody, .nutrilabel tfoot, .nutrilabel thead, .nutrilabel tr, .nutrilabel th, .nutrilabel td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent; }
+  .nutrilabel body {
+    line-height: 1; }
+  .nutrilabel ol, .nutrilabel ul {
+    list-style: none; }
+  .nutrilabel blockquote, .nutrilabel q {
+    quotes: none; }
+  .nutrilabel blockquote:before, .nutrilabel blockquote:after, .nutrilabel q:before, .nutrilabel q:after {
+    content: '';
+    content: none; }
+  .nutrilabel :focus {
+    outline: 0; }
+  .nutrilabel ins {
+    text-decoration: none; }
+  .nutrilabel del {
+    text-decoration: line-through; }
+  .nutrilabel table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .nutrilabel * {
+    margin: 0;
+    padding: 0px; }
+  .nutrilabel article, .nutrilabel aside, .nutrilabel details, .nutrilabel figcaption, .nutrilabel figure, .nutrilabel footer, .nutrilabel header, .nutrilabel hgroup, .nutrilabel menu, .nutrilabel nav, .nutrilabel section {
+    display: block; }
+  .nutrilabel body {
+    line-height: 1; }
+  .nutrilabel ol, .nutrilabel ul {
+    list-style: none; }
+  .nutrilabel blockquote, .nutrilabel q {
+    quotes: none; }
+  .nutrilabel blockquote:before, .nutrilabel blockquote:after {
+    content: "";
+    content: none; }
+  .nutrilabel q:before, .nutrilabel q:after {
+    content: "";
+    content: none; }
+  .nutrilabel table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .nutrilabel b {
+    color: #263236; }
+  .nutrilabel h1 {
+    font-family: 'PT Sans';
+    font-size: 36px; }
+  .nutrilabel h2 {
+    font-family: 'Nunito';
+    font-size: 19px;
+    border-bottom: 4px double #626262;
+    border-top: 4px double #626262;
+    padding: 10px 0px; }
+  .nutrilabel .section {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #626262; }
+    .nutrilabel .section > .header {
+      cursor: pointer;
+      padding-bottom: 10px; }
+      .nutrilabel .section > .header.noborder {
+        border: 0; }
+  .nutrilabel .table {
+    display: table;
+    width: 100%; }
+    .nutrilabel .table > * {
+      display: table-cell;
+      vertical-align: top;
+      padding: 5px 0; }
+    .nutrilabel .table > .column1 {
+      width: 170px;
+      padding-right: 10px; }
+    .nutrilabel .table > .column2 {
+      width: 90px;
+      text-align: left; }
+    .nutrilabel .table > .column3 {
+      text-align: right; }
+  .nutrilabel .chevron {
+    color: #cfd2d3; }
+  .nutrilabel .serving {
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    .nutrilabel .serving .unitSelect {
+      border: 1px solid #626262;
+      position: relative;
+      display: inline-block;
+      margin: 0 10px;
+      vertical-align: middle; }
+      .nutrilabel .serving .unitSelect > * {
+        display: table-cell;
+        vertical-align: top; }
+      .nutrilabel .serving .unitSelect > div {
+        border-left: 1px solid #626262;
+        padding-left: 3px;
+        padding-right: 3px; }
+        .nutrilabel .serving .unitSelect > div > a {
+          display: block;
+          font-size: 12px; }
+      .nutrilabel .serving .unitSelect input.unitQuantityBox {
+        float: left;
+        width: 40px;
+        margin-top: 5px;
+        padding: 4px;
+        line-height: 15px \9;
+        border: 0;
+        font-weight: bold; }
+  .nutrilabel .calories {
+    border-top: 1px solid #626262;
+    border-bottom: 1px solid #626262; }
+  .nutrilabel .info {
+    font-style: italic;
+    font-size: 11px;
+    border-bottom: 4px double #626262;
+    border-top: 1px solid #626262;
+    padding: 10px 0px; }
+  .nutrilabel .allergic .header {
+    border-top: 0; }
+  .nutrilabel .allergic ul {
+    overflow: hidden; }
+    .nutrilabel .allergic ul li {
+      float: left;
+      width: 50%; }
+      .nutrilabel .allergic ul li .fa-exclamation-circle {
+        color: #e04040; }
+  .nutrilabel .nutritional-values {
+    border-bottom: 0; }
+    .nutrilabel .nutritional-values .header {
+      border-bottom: 1px solid #626262; }
+  .nutrilabel .switcher {
+    display: table;
+    width: 100%; }
+    .nutrilabel .switcher > a {
+      display: table-cell;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      width: 50%;
+      padding: 10px 0px;
+      border-bottom: 1px solid #626262; }
+      .nutrilabel .switcher > a:last-child {
+        border-left: 1px solid #626262; }
+      .nutrilabel .switcher > a.selected {
+        border-bottom: 0; }
+  .nutrilabel .per-unit, .nutrilabel .hidden {
+    display: none; }
+  .nutrilabel .short {
+    height: 50px;
+    overflow: hidden; }
+  .nutrilabel .hidenutritional [data-showbydefault=false] {
+    display: none; }

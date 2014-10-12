@@ -99,9 +99,7 @@
 
 
         display: table;
-        &[data-showbydefault=false] {
-            display: none;
-        }
+
         width: 100%;
 
         >* {
@@ -237,6 +235,10 @@
     .short {
         height: 50px;
         overflow:hidden;
+    }
+
+    .hidenutritional [data-showbydefault=false] {
+        display: none;
     }
 
 

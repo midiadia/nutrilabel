@@ -3214,7 +3214,7 @@
             <div class="section nutritional-values per-unit">\
                 <div class="table header">\
                     <div class="column1">Valores Nutricionales</div>\
-                    <div class="column3"><!--<a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a>--></div>\
+                    <div class="column3"><a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a></div>\
                 </div>\
                 <div class="content">\
                     <div class="nutritional">\
@@ -3248,7 +3248,7 @@
             <div class="section nutritional-values per-hundred">\
                 <div class="table header">\
                     <div class="column1">Valores Nutricionales</div>\
-                    <div class="column3"><!--<a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a>--></div>\
+                    <div class="column3"><a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a></div>\
                 </div>\
                 <div class="content">\
                     <div class="nutritional">\
@@ -3315,13 +3315,13 @@
         </div>';
 
     function loadFontAndCss() {
-        $.getScript('//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', function() {
+        $.getScript('https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js', function() {
             WebFont.load({
                 google: {
                     families: ['Nunito', 'Nunito:bold', 'Nunito:italic']
                 },
                 custom: {
-                    urls: ['//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css']
+                    urls: ['https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css']
                 }
             });
         });
@@ -3394,5 +3394,26 @@
                 t.find('.chevron').hide();
             }
         });
+ 
+        $elem.find('.nutritional-values').each(function(i,s) {
+                                        var t = $(s);
+                                        if (t.find('[data-showByDefault="false"]').length>0) {
+                                        t.find('.content').addClass('hidenutritional');
+                                        t.find('.chevron').click(function(e) {
+                                                                 e.preventDefault();
+                                                                 });
+                                        t.find('.table.header').click(function() {
+                                                                      $(this).next().toggleClass('hidenutritional');
+                                                                      $(this).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+                                                                      return false;
+                                                                      });
+                                        } else {
+                                        t.find('.chevron').hide();
+                                        }
+                                        });
+
+ 
+ 
+ 
     }
 })(jQuery);
