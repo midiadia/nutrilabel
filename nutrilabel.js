@@ -3196,7 +3196,7 @@
             <h1>{{Data.Product.Name}}</h1>\
             <h2>INFORMACION NUTRICIONAL</h2>\
             {{#if Data.NutritionalValuesPerUnit}}\
-            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">{{Data.Product.MeasurementUnit}}</a></div>\
+            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">{{Data.Product.QuantityPerUnit}} {{Data.Product.MeasurementPerUnit}}</a></div>\
             {{/if}}\
             {{#if Data.NutritionalValuesPerUnit}}\
             <div class="serving per-unit">\
@@ -3208,7 +3208,7 @@
                             <a href="#" data-change="1"><i class="fa fa-plus"></i></a>\
                             <a href="#" data-change="-1"><i class="fa fa-minus"></i></a>\
                         </div>\
-                    </div> {{Data.Product.MeasurementUnit}}\
+                    </div> {{Data.Product.MeasurementPerUnit}}\
                 </div>\
             </div>\
             <div class="section nutritional-values per-unit">\
@@ -3222,7 +3222,7 @@
                         <div class="table" data-showByDefault="{{IsVarietyDefault}}">\
                             <div class="column1"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <!--<div class="column3"><b>18</b>%</div>-->\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{/if}}</div>\
                         </div>\
                         {{/each}}\
                     </div>\
@@ -3256,8 +3256,17 @@
                         <div class="table" data-showByDefault="{{IsVarietyDefault}}">\
                             <div class="column1"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <!--<div class="column3"><b>18</b>%</div>-->\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{/if}}</div>\
                         </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b>{{ReferencePercentage}}</b>%{{/if}}</div>\
+                        </div>\
+                        {{/each}}\
+                        {{/if}}\
                         {{/each}}\
                     </div>\
                     <div class="info">\
@@ -3362,6 +3371,7 @@
                 if (nw >= orj) {
                     input.val(nw).change();
                 }
+                return false;
             });
 
             input.change(function() {
@@ -3378,9 +3388,9 @@
             });
 
         });
-        $elem.find('.expandable').each(function(i,s) {
+        $elem.find('.expandable').each(function(i, s) {
             var t = $(s), h = t.height();
-            if (h > 100) {
+            if (h > 50) {
                 t.find('.content').addClass('short');
                 t.find('.chevron').click(function(e) {
                     e.preventDefault();
@@ -3394,26 +3404,26 @@
                 t.find('.chevron').hide();
             }
         });
- 
-        $elem.find('.nutritional-values').each(function(i,s) {
-                                        var t = $(s);
-                                        if (t.find('[data-showByDefault="false"]').length>0) {
-                                        t.find('.content').addClass('hidenutritional');
-                                        t.find('.chevron').click(function(e) {
-                                                                 e.preventDefault();
-                                                                 });
-                                        t.find('.table.header').click(function() {
-                                                                      $(this).next().toggleClass('hidenutritional');
-                                                                      $(this).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
-                                                                      return false;
-                                                                      });
-                                        } else {
-                                        t.find('.chevron').hide();
-                                        }
-                                        });
 
- 
- 
- 
+        $elem.find('.nutritional-values').each(function(i, s) {
+            var t = $(s);
+            if (t.find('[data-showByDefault="false"]').length > 0) {
+                t.find('.content').addClass('hidenutritional');
+                t.find('.chevron').click(function(e) {
+                    e.preventDefault();
+                });
+                t.find('.table.header').click(function() {
+                    $(this).next().toggleClass('hidenutritional');
+                    $(this).find('.fa').toggleClass('fa-chevron-down fa-chevron-up');
+                    return false;
+                });
+            } else {
+                t.find('.chevron').hide();
+            }
+        });
+
+
+
+
     }
 })(jQuery);
