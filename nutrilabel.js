@@ -3390,7 +3390,7 @@
         });
         $elem.find('.expandable').each(function(i, s) {
             var t = $(s), h = t.height();
-            if (h > 50) {
+            if (h > 100) {
                 t.find('.content').addClass('short');
                 t.find('.chevron').click(function(e) {
                     e.preventDefault();
