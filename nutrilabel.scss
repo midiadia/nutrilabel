@@ -57,10 +57,10 @@
 
 
     @include meyer-reset; 
-    width: 310px;
+    width: 250px;
     padding: 0 10px;
     font-family: 'Nunito';
-    font-size: 14px;
+    font-size: 12px;
     border: 2px solid black;
 
     b {
@@ -69,12 +69,12 @@
 
     h1 {
         font-family: 'PT Sans';
-        font-size: 36px;
+        font-size: 25px;
     }
 
     h2 {
         font-family: 'Nunito';
-        font-size: 19px;
+        font-size: 15px;
         border-bottom: 4px double #626262;
         border-top: 4px double #626262;
         padding: 10px 0px;
@@ -84,11 +84,10 @@
     .section {
         > .header {
             cursor: pointer;
-
+            font-weight: bold;
             &.noborder {
                 border:0;
             }
-            padding-bottom: 10px;
         }
         padding-bottom: 10px;
         border-bottom: 1px solid #626262;
@@ -118,20 +117,21 @@
         }
 
         > .column1 {
-            min-width: 160px;
+            min-width: 130px;
             padding-right: 10px;
-            max-width: 160px;
+            max-width: 130px;
+
         }
 
         > .column2 {
-            max-width: 75px;
-            min-width: 75px;
+            max-width: 60px;
+            min-width: 60px;
             text-align: right;
         }
 
         > .column3 {
-            min-width: 75px;
-            max-width: 75px;
+            min-width: 60px;
+            max-width: 60px;
             text-align: right;
         }
     }
@@ -191,6 +191,13 @@
         border-bottom: 4px double #626262;
         border-top: 1px solid #626262;
         padding: 10px 0px;
+        >i {
+            float:left;
+            font-size: 8px;
+        }
+        > div {
+            margin-left: 12px;
+        }
     }
 
     .allergic {
@@ -214,8 +221,9 @@
         border-bottom:0;
 
         .header {
-            border-bottom: 1px solid #626262;
+            border-bottom: 3px solid #626262;
             display: table;
+            margin-bottom:5px;
         }
     }
 
@@ -226,7 +234,7 @@
             display: table-cell;
             text-align: center;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 13px;
             width: 50%;
             padding: 10px 0px;
 
@@ -265,9 +273,27 @@
 
         font-style: italic;
         padding-left: 10px;
-        
+
         .column1 {
             padding-left: 10px;
+        }
+    }
+
+    .nutritional {
+        border-collapse: collapse;
+
+        .column1 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .table {
+            border-bottom: 1px solid darken(#ddd,20);
+
+            &:last-child {
+                border-bottom:0;
+            }
         }
     }
 }

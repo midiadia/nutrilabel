@@ -1,8 +1,8 @@
 .nutrilabel {
-  width: 310px;
+  width: 250px;
   padding: 0 10px;
   font-family: 'Nunito';
-  font-size: 14px;
+  font-size: 12px;
   border: 2px solid black; }
   .nutrilabel a, .nutrilabel {
     color: #263236; }
@@ -69,10 +69,10 @@
     color: #263236; }
   .nutrilabel h1 {
     font-family: 'PT Sans';
-    font-size: 36px; }
+    font-size: 25px; }
   .nutrilabel h2 {
     font-family: 'Nunito';
-    font-size: 19px;
+    font-size: 15px;
     border-bottom: 4px double #626262;
     border-top: 4px double #626262;
     padding: 10px 0px; }
@@ -81,7 +81,7 @@
     border-bottom: 1px solid #626262; }
     .nutrilabel .section > .header {
       cursor: pointer;
-      padding-bottom: 10px; }
+      font-weight: bold; }
       .nutrilabel .section > .header.noborder {
         border: 0; }
     .nutrilabel .section:last-child {
@@ -97,16 +97,16 @@
       vertical-align: bottom;
       padding: 5px 0; }
     .nutrilabel .table > .column1 {
-      min-width: 160px;
+      min-width: 130px;
       padding-right: 10px;
-      max-width: 160px; }
+      max-width: 130px; }
     .nutrilabel .table > .column2 {
-      max-width: 75px;
-      min-width: 75px;
+      max-width: 60px;
+      min-width: 60px;
       text-align: right; }
     .nutrilabel .table > .column3 {
-      min-width: 75px;
-      max-width: 75px;
+      min-width: 60px;
+      max-width: 60px;
       text-align: right; }
   .nutrilabel .chevron {
     color: #cfd2d3; }
@@ -146,6 +146,11 @@
     border-bottom: 4px double #626262;
     border-top: 1px solid #626262;
     padding: 10px 0px; }
+    .nutrilabel .info > i {
+      float: left;
+      font-size: 8px; }
+    .nutrilabel .info > div {
+      margin-left: 12px; }
   .nutrilabel .allergic .header {
     border-top: 0; }
   .nutrilabel .allergic ul {
@@ -158,8 +163,9 @@
   .nutrilabel .nutritional-values {
     border-bottom: 0; }
     .nutrilabel .nutritional-values .header {
-      border-bottom: 1px solid #626262;
-      display: table; }
+      border-bottom: 3px solid #626262;
+      display: table;
+      margin-bottom: 5px; }
   .nutrilabel .switcher {
     display: table;
     width: 100%; }
@@ -167,7 +173,7 @@
       display: table-cell;
       text-align: center;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 13px;
       width: 50%;
       padding: 10px 0px;
       border-bottom: 1px solid #626262; }
@@ -190,5 +196,15 @@
       color: #3b4e54; }
     .nutrilabel .children .column1 {
       padding-left: 10px; }
+  .nutrilabel .nutritional {
+    border-collapse: collapse; }
+    .nutrilabel .nutritional .column1 {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .nutrilabel .nutritional .table {
+      border-bottom: 1px solid #aaaaaa; }
+      .nutrilabel .nutritional .table:last-child {
+        border-bottom: 0; }
 
 /*# sourceMappingURL=nutrilabel.css.map */

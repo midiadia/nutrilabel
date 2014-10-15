@@ -3196,7 +3196,7 @@
             <h1>{{Data.Product.Name}}</h1>\
             <h2>INFORMACION NUTRICIONAL</h2>\
             {{#if Data.NutritionalValuesPerUnit}}\
-            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">{{Data.Product.QuantityPerUnit}} {{Data.Product.MeasurementPerUnit}}</a></div>\
+            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">{{Data.Product.QuantityPerUnit}} Ración</a></div>\
             {{/if}}\
             {{#if Data.NutritionalValuesPerUnit}}\
             <div class="serving per-unit">\
@@ -3220,14 +3220,23 @@
                     <div class="nutritional">\
                     {{#each Data.NutritionalValuesPerUnit}}\
                         <div class="table" data-showByDefault="{{IsVarietyDefault}}">\
-                            <div class="column1"><b>{{Name}}</b></div>\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{/if}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b>{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{/each}}\
+                        {{/if}}\
                         {{/each}}\
                     </div>\
                     <div class="info">\
-                        <i class="fa fa-asterisk"></i> El porcentaje de los valores diarios se basa en una dieta de 2000 calorias\
+                        <i class="fa fa-asterisk"></i> <div>El porcentaje de los valores diarios se basa en una dieta de 2000 kilocalorias</div>\
                     </div>\
                 </div>\
             </div>\
@@ -3256,21 +3265,21 @@
                         <div class="table" data-showByDefault="{{IsVarietyDefault}}">\
                             <div class="column1"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{/if}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{#if Children}}\
                         {{#each Children}}\
                         <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1"><b>{{Name}}</b></div>\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b>{{ReferencePercentage}}</b>%{{/if}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b>{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{/each}}\
                         {{/if}}\
                         {{/each}}\
                     </div>\
                     <div class="info">\
-                        <i class="fa fa-asterisk"></i> El porcentaje de los valores diarios se basa en una dieta de 2000 calorias\
+                        <i class="fa fa-asterisk"></i> <div>El porcentaje de los valores diarios se basa en una dieta de 2000 kilocalorias</div>\
                     </div>\
                 </div>\
             </div>\
