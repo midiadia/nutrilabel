@@ -3193,8 +3193,8 @@
     };
 
     htmlTemplate = '<div class="nutrilabel">\
-            <h1>INFORMACION NUTRICIONAL</h1>\
-            <h2>{{Data.Product.Name}}</h2>\
+            <h2>INFORMACION NUTRICIONAL</h2>\
+            <h1>{{Data.Product.Name}}</h1>\
             {{#if Data.NutritionalValuesPerUnit}}\
             <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">Ración</a></div>\
             {{/if}}\
@@ -3203,10 +3203,10 @@
                 <div>\
                    Información por \
                     <div class="unitSelect">\
-                        <input type="text" data-value="1" value="1" class="unitQuantityBox">\
+                        <input type="text" data-value="{{Data.Product.QuantityPerUnit}}" value="{{Data.Product.QuantityPerUnit}}" class="unitQuantityBox">\
                         <div>\
-                            <a href="#" data-change="1"><i class="fa fa-plus"></i></a>\
-                            <a href="#" data-change="-1"><i class="fa fa-minus"></i></a>\
+                            <a href="#" data-change="{{Data.Product.QuantityPerUnit}}"><i class="fa fa-plus"></i></a>\
+                            <a href="#" data-change="-{{Data.Product.QuantityPerUnit}}"><i class="fa fa-minus"></i></a>\
                         </div>\
                     </div> {{Data.Product.MeasurementPerUnit}}\
                 </div>\
@@ -3214,7 +3214,7 @@
             <div class="section nutritional-values per-unit">\
                 <div class="table header">\
                     <div class="column1">Valores Nutricionales</div>\
-                    <div class="column3">% de valor diario*</div>\
+                    <div class="column3">% de valor diario*  <i class="chevron fa fa-chevron-down"></i></div>\
                 </div>\
                 <div class="content">\
                     <div class="nutritional">\
@@ -3257,7 +3257,7 @@
             <div class="section nutritional-values per-hundred">\
                 <div class="table header">\
                     <div class="column1">Valores Nutricionales</div>\
-                    <div class="column3">% de valor diario*</div>\
+                    <div class="column3">% de valor diario* <i class="chevron fa fa-chevron-down"></i></div>\
                 </div>\
                 <div class="content">\
                     <div class="nutritional">\
@@ -3272,7 +3272,7 @@
                         <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
                             <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{/each}}\
                         {{/if}}\
@@ -3311,7 +3311,7 @@
             </div>\
             {{/if}}\
             {{#if Data.Ingredients}} \
-            <div class="section ingredientes expandable">\
+            <div class="section ingredientes expandable defaulthidden">\
                 <div class="table header">\
                     <div class="column1"><b>Ingredientes</b></div>\
                     <div class="column3"><a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a></div>\
@@ -3321,7 +3321,7 @@
                 </div>\
             </div>\
             {{/if}} \
-            <div class="section disclaimer expandable">\
+            <div class="section disclaimer expandable defaulthidden">\
                 <div class="table header">\
                     <div class="column1"><b>Advertencia</b></div>\
                     <div class="column3"><a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a></div>\
@@ -3383,23 +3383,25 @@
                 return false;
             });
 
-            input.change(function() {
+            input.on('change', function() {
                 var orj = parseInt($(this).attr('data-value')),
-                        nw = parseInt($(this).val()),
-                        multiply = nw / orj;
-                console.log(multiply);
+                        nw = parseInt($(this).val());
+                //multiply = nw / orj;
                 var values = $(this).parent().parent().parent().next().find('b.value');
                 values.each(function() {
                     var cur = parseInt($(this).attr('data-value'));
-                    console.log(cur);
-                    $(this).html(Math.floor(cur * multiply));
+                    var x = Math.floor((cur / orj) * nw);
+                    $(this).html(x);
                 });
             });
 
         });
         $elem.find('.expandable').each(function(i, s) {
             var t = $(s), h = t.height();
-            if (h > 100) {
+            var x = 100;
+            if (t.hasClass('defaulthidden'))
+                x = 0;
+            if (h > x) {
                 t.find('.content').addClass('short');
                 t.find('.chevron').click(function(e) {
                     e.preventDefault();

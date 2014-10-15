@@ -1,6 +1,6 @@
 .nutrilabel {
   width: 250px;
-  padding: 0 10px;
+  padding: 5px 10px;
   font-family: 'Nunito';
   font-size: 12px;
   border: 2px solid black; }
@@ -69,15 +69,15 @@
     color: #263236; }
   .nutrilabel h1 {
     font-family: 'PT Sans';
-    font-size: 19px;
+    font-size: 22px;
     line-height: 1;
-    padding: .2em 0; }
+    padding: 8px 0px;
+    border-bottom: 1px solid #626262;
+    border-top: 4px double #626262; }
   .nutrilabel h2 {
     font-family: 'Nunito';
     font-size: 15px;
-    border-bottom: 4px double #626262;
-    border-top: 4px double #626262;
-    padding: 10px 0px; }
+    padding: 5px 0px; }
   .nutrilabel .section {
     padding-bottom: 10px;
     border-bottom: 1px solid #626262; }
@@ -111,7 +111,8 @@
       max-width: 60px;
       text-align: right; }
   .nutrilabel .chevron {
-    color: #cfd2d3; }
+    color: #cfd2d3;
+    font-size: 13px; }
   .nutrilabel .serving {
     padding-bottom: 5px;
     padding-top: 5px; }
@@ -119,7 +120,7 @@
       border: 1px solid #626262;
       position: relative;
       display: inline-block;
-      margin: 0 5px 0 5px;
+      margin: 0 5px 0 33px;
       vertical-align: middle; }
       .nutrilabel .serving .unitSelect > * {
         display: table-cell;
@@ -130,15 +131,16 @@
         padding-right: 3px; }
         .nutrilabel .serving .unitSelect > div > a {
           display: block;
-          font-size: 12px; }
+          font-size: 9px; }
       .nutrilabel .serving .unitSelect input.unitQuantityBox {
         float: left;
         width: 40px;
-        margin-top: 5px;
+        margin-top: 3px;
         padding: 4px;
         line-height: 13px \9;
         border: 0;
-        font-weight: bold; }
+        font-weight: bold;
+        font-size: 9px; }
   .nutrilabel .calories {
     border-top: 1px solid #626262;
     border-bottom: 1px solid #626262; }
@@ -168,6 +170,11 @@
       border-bottom: 3px solid #626262;
       display: table;
       margin-bottom: 5px; }
+      .nutrilabel .nutritional-values .header .column3 {
+        max-width: 100px;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: italic; }
   .nutrilabel .switcher {
     display: table;
     width: 100%; }
@@ -177,7 +184,7 @@
       text-decoration: none;
       font-size: 13px;
       width: 50%;
-      padding: 10px 0px;
+      padding: 5px 0px;
       border-bottom: 1px solid #626262; }
       .nutrilabel .switcher > a:last-child {
         border-left: 1px solid #626262; }
@@ -186,7 +193,7 @@
   .nutrilabel .per-unit, .nutrilabel .hidden {
     display: none; }
   .nutrilabel .short {
-    height: 50px;
+    height: 0px;
     overflow: hidden; }
   .nutrilabel .hidenutritional [data-showbydefault=false] {
     display: none; }
