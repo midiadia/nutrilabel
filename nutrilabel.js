@@ -3193,10 +3193,10 @@
     };
 
     htmlTemplate = '<div class="nutrilabel">\
-            <h1>{{Data.Product.Name}}</h1>\
-            <h2>INFORMACION NUTRICIONAL</h2>\
+            <h1>INFORMACION NUTRICIONAL</h1>\
+            <h2>{{Data.Product.Name}}</h2>\
             {{#if Data.NutritionalValuesPerUnit}}\
-            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">{{Data.Product.QuantityPerUnit}} Ración</a></div>\
+            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">Ración</a></div>\
             {{/if}}\
             {{#if Data.NutritionalValuesPerUnit}}\
             <div class="serving per-unit">\
@@ -3214,7 +3214,7 @@
             <div class="section nutritional-values per-unit">\
                 <div class="table header">\
                     <div class="column1">Valores Nutricionales</div>\
-                    <div class="column3"><a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a></div>\
+                    <div class="column3">% de valor diario*</div>\
                 </div>\
                 <div class="content">\
                     <div class="nutritional">\
@@ -3229,7 +3229,7 @@
                         <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
                             <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b>{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{/each}}\
                         {{/if}}\
@@ -3257,13 +3257,13 @@
             <div class="section nutritional-values per-hundred">\
                 <div class="table header">\
                     <div class="column1">Valores Nutricionales</div>\
-                    <div class="column3"><a href="#" class="chevron"><i class="fa fa-chevron-down"></i></a></div>\
+                    <div class="column3">% de valor diario*</div>\
                 </div>\
                 <div class="content">\
                     <div class="nutritional">\
                     {{#each Data.NutritionalValues}}\
                         <div class="table" data-showByDefault="{{IsVarietyDefault}}">\
-                            <div class="column1"><b>{{Name}}</b></div>\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
                             <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
@@ -3272,7 +3272,7 @@
                         <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
                             <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b>{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{/each}}\
                         {{/if}}\
@@ -3392,7 +3392,7 @@
                 values.each(function() {
                     var cur = parseInt($(this).attr('data-value'));
                     console.log(cur);
-                    $(this).html(cur * multiply);
+                    $(this).html(Math.floor(cur * multiply));
                 });
             });
 

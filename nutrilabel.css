@@ -69,7 +69,7 @@
     color: #263236; }
   .nutrilabel h1 {
     font-family: 'PT Sans';
-    font-size: 25px;
+    font-size: 19px;
     line-height: 1;
     padding: .2em 0; }
   .nutrilabel h2 {
@@ -113,13 +113,13 @@
   .nutrilabel .chevron {
     color: #cfd2d3; }
   .nutrilabel .serving {
-    padding-bottom: 10px;
-    padding-top: 10px; }
+    padding-bottom: 5px;
+    padding-top: 5px; }
     .nutrilabel .serving .unitSelect {
       border: 1px solid #626262;
       position: relative;
       display: inline-block;
-      margin: 0 5px 0 33px;
+      margin: 0 5px 0 5px;
       vertical-align: middle; }
       .nutrilabel .serving .unitSelect > * {
         display: table-cell;
@@ -136,7 +136,7 @@
         width: 40px;
         margin-top: 5px;
         padding: 4px;
-        line-height: 15px \9;
+        line-height: 13px \9;
         border: 0;
         font-weight: bold; }
   .nutrilabel .calories {
