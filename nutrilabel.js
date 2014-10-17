@@ -3284,7 +3284,7 @@
                 </div>\
             </div>\
             {{/if}}\
-            {{#if Data.Allergens}}\
+			\
             <div class="section allergic expandable">\
                 <div class="table header">\
                     <div class="column1"><b>Información Alérgica</b></div>\
@@ -3292,10 +3292,13 @@
                 </div>\
                 <ul class="content">\
                     {{#each Data.Allergens}} <li><i class="fa fa-exclamation-circle"></i> {{Name}}</li>{{/each}} \
-                    </ul> \
+                </ul> \
+				{{#unless Data.Allergens}}\
+					<span>No declarados\
+					</span>\
+				{{/unless}}\
             </div> \
-            {{/if}} \
-            {{#if Data.Messages}}\
+            \
             <div class="section messages expandable">\
                 <div class="table header">\
                     <div class="column1"><b>Mensajes de salud</b></div>\
@@ -3308,9 +3311,13 @@
                         {{/each}}                                                                                   \
                     </ul> \
                 </div>\
+				{{#unless Data.Messages}}\
+					<span>No declarados\
+					</span>\
+				{{/unless}}\
             </div>\
-            {{/if}}\
-            {{#if Data.Ingredients}} \
+            \
+            \
             <div class="section ingredientes expandable defaulthidden">\
                 <div class="table header">\
                     <div class="column1"><b>Ingredientes</b></div>\
@@ -3319,8 +3326,12 @@
                 <div class="content">\
                     <ul>{{#each Data.Ingredients}}<li>{{Name}}</li>{{/each}}</ul>\
                 </div>\
+				{{#unless Data.Ingredients}}\
+					<span>No declarados\
+					</span>\
+				{{/unless}}\
             </div>\
-            {{/if}} \
+            \
             <div class="section disclaimer expandable defaulthidden">\
                 <div class="table header">\
                     <div class="column1"><b>Advertencia</b></div>\
