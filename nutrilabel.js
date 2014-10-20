@@ -3384,13 +3384,17 @@
             });
 
             input.on('change', function() {
-                var orj = parseInt($(this).attr('data-value')),
+                var orj = parseFloat($(this).attr('data-value')),
                         nw = parseInt($(this).val());
                 //multiply = nw / orj;
                 var values = $(this).parent().parent().parent().next().find('b.value');
                 values.each(function() {
-                    var cur = parseInt($(this).attr('data-value'));
-                    var x = Math.floor((cur / orj) * nw);
+                    var cur = parseFloat($(this).attr('data-value').replace(',', '.'));
+                    // var x = Math.floor((cur / orj) * nw).toFixed(2);
+                    var x = ((cur / orj) * nw).toFixed(1);
+                    if (parseFloat(Math.floor(x) + '.0') == x) {
+                        x = Math.floor(x);
+                    }
                     $(this).html(x);
                 });
             });
