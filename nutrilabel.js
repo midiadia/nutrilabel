@@ -3349,7 +3349,7 @@
         var context = new Object();
         context.Data = settings.nutriLabelData;
         context.MetaData = new Object();
-        context.MetaData.Disclaimer = settings.disclaimerText;
+        context.MetaData.Disclaimer = context.Data.Disclaimer || settings.disclaimerText;
         return template(context);
     }
 
