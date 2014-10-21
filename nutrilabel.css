@@ -205,6 +205,12 @@
       color: #3b4e54; }
     .nutrilabel .children .column1 {
       padding-left: 10px; }
+    .nutrilabel .children.children2 .column1 {
+      padding-left: 20px; }
+    .nutrilabel .children.children3 .column1 {
+      padding-left: 30px; }
+    .nutrilabel .children.children4 .column1 {
+      padding-left: 40px; }
   .nutrilabel .nutritional {
     border-collapse: collapse; }
     .nutrilabel .nutritional .column1 {

@@ -3231,6 +3231,33 @@
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
                             <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children children2" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children children3" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children children4" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{/each}}\
+                        {{/if}}\
+                        {{/each}}\
+                        {{/if}}\
+                        {{/each}}\
+                        {{/if}}\
                         {{/each}}\
                         {{/if}}\
                         {{/each}}\
@@ -3274,6 +3301,33 @@
                             <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
                             <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children children2" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children children3" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{#if Children}}\
+                        {{#each Children}}\
+                        <div class="table children children4" data-showByDefault="{{Children.IsVarietyDefault}}">\
+                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                        </div>\
+                        {{/each}}\
+                        {{/if}}\
+                        {{/each}}\
+                        {{/if}}\
+                        {{/each}}\
+                        {{/if}}\
                         {{/each}}\
                         {{/if}}\
                         {{/each}}\

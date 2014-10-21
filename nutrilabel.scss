@@ -280,7 +280,6 @@
     .children {
         &, b {
             font-weight: normal;
-
             color: lighten(#263236, 10%);
         }
 
@@ -289,6 +288,24 @@
 
         .column1 {
             padding-left: 10px;
+        }
+
+        &.children2 {
+            .column1 {
+                padding-left: 20px;
+            }
+        }
+        
+        &.children3 {
+            .column1 {
+                padding-left: 30px;
+            }
+        }
+        
+        &.children4 {
+            .column1 {
+                padding-left: 40px;
+            }
         }
     }
 
