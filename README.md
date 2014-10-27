@@ -18,7 +18,7 @@ Now you are ready to feed the widget and fire it.
 
 Just put the JSON response that returns the Midíadía API into a variable:
 
-      var nutriLabelDataStr = 'JSON_CONTENT';
+      var nutriLabelDataStr = 'JSON_CONTENT'; //see nutrilabel.html for an example of JSON output.
 
 Now add a blank element wherever you want to put the widget on your page.
 
