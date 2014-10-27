@@ -45,7 +45,7 @@ For the usage see nutrilabel.html file in the repository.
 Notes
 =========
 
- 1. https://www.midiadia.com/nutrilabel/ is our CDN that's updated periodically. To use the latest version of the widget, always use this CDN.
+ 1. https://api.midiadia.com/nutrilabel/ is our CDN that's updated periodically. To use the latest version of the widget, always use this CDN.
  
  2. A SASS file is provided with the repository. But if you want to customize the appearance always **override** the current CSS, not **change** to be able to use the widget without any problems after any update.
 
