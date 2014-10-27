@@ -6,11 +6,11 @@ With this small jQuery plugin, you can add a nutritional values label in your si
 Installation
 =========
 
-To use the widget in your page between <head></head> tag put the CSS file.
+To use the widget in your page between `<head></head>` tag put the CSS file.
 
     <link rel="stylesheet" href="//api.midiadia.com/nutrilabel/nutrilabel.css">
 
-Then, preferably just before "</body>" close tag, put the javascript file 
+Then, preferably just before `</body>` close tag, put the javascript file 
 
     <script src="//api.midiadia.com/nutrilabel/nutrilabel.js"></script>
 
