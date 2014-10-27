@@ -3,6 +3,11 @@ Midíadía Nutrition Label
 
 With this small jQuery plugin, you can add a nutritional values label in your site using Midíadía's API result.
 
+Requirements
+=========
+
+jQuery 1.6+ is required for the widget.
+
 Installation
 =========
 
