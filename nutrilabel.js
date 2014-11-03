@@ -3225,42 +3225,42 @@
                             <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children children2" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children children3" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children children4" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{/each}}\
+                            {{#each Children}}\
+                            <div class="table children" data-showByDefault="{{IsVarietyDefault}}">\
+                                <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                            </div>\
+                                {{#if Children}}\
+                                    {{#each Children}}\
+                                    <div class="table children children2" data-showByDefault="{{IsVarietyDefault}}">\
+                                        <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                        <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                        <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                                    </div>\
+                                    {{#if Children}}\
+                                        {{#each Children}}\
+                                        <div class="table children children3" data-showByDefault="{{IsVarietyDefault}}">\
+                                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                                        </div>\
+                                        {{#if Children}}\
+                                        {{#each Children}}\
+                                        <div class="table children children4" data-showByDefault="{{IsVarietyDefault}}">\
+                                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                                        </div>\
+                                        {{/each}}\
+                                        {{/if}}\
+                                        {{/each}}\
+                                    {{/if}}\
+                                    {{/each}}\
+                                {{/if}}\
+                            {{/each}}\
                         {{/if}}\
-                        {{/each}}\
-                        {{/if}}\
-                        {{/each}}\
-                        {{/if}}\
-                        {{/each}}\
-                        {{/if}}\
-                        {{/each}}\
+                    {{/each}}\
                     </div>\
                     <div class="info">\
                         <i class="fa fa-asterisk"></i> <div>El porcentaje de los valores diarios se basa en una dieta de 2000 kilocalorias</div>\
@@ -3295,42 +3295,42 @@
                             <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
                         </div>\
                         {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children children2" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children children3" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{#if Children}}\
-                        {{#each Children}}\
-                        <div class="table children children4" data-showByDefault="{{Children.IsVarietyDefault}}">\
-                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
-                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
-                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
-                        </div>\
-                        {{/each}}\
+                            {{#each Children}}\
+                            <div class="table children" data-showByDefault="{{IsVarietyDefault}}">\
+                                <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                            </div>\
+                                {{#if Children}}\
+                                    {{#each Children}}\
+                                    <div class="table children children2" data-showByDefault="{{IsVarietyDefault}}">\
+                                        <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                        <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                        <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                                    </div>\
+                                    {{#if Children}}\
+                                        {{#each Children}}\
+                                        <div class="table children children3" data-showByDefault="{{IsVarietyDefault}}">\
+                                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                                        </div>\
+                                        {{#if Children}}\
+                                        {{#each Children}}\
+                                        <div class="table children children4" data-showByDefault="{{IsVarietyDefault}}">\
+                                            <div class="column1" title="{{Name}}"><b>{{Name}}</b></div>\
+                                            <div class="column3"><b class="value" data-value="{{Value}}">{{Value}}</b>{{MeasurementUnit}}</div>\
+                                            <div class="column3">{{#if ReferencePercentage}}<b class="value" data-value="{{ReferencePercentage}}">{{ReferencePercentage}}</b>%{{else}}--{{/if}}</div>\
+                                        </div>\
+                                        {{/each}}\
+                                        {{/if}}\
+                                        {{/each}}\
+                                    {{/if}}\
+                                    {{/each}}\
+                                {{/if}}\
+                            {{/each}}\
                         {{/if}}\
-                        {{/each}}\
-                        {{/if}}\
-                        {{/each}}\
-                        {{/if}}\
-                        {{/each}}\
-                        {{/if}}\
-                        {{/each}}\
+                    {{/each}}\
                     </div>\
                     <div class="info">\
                         <i class="fa fa-asterisk"></i> <div>El porcentaje de los valores diarios se basa en una dieta de 2000 kilocalorias</div>\
