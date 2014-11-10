@@ -67,13 +67,15 @@
     border-spacing: 0; }
   .nutrilabel b {
     color: #263236; }
+  .nutrilabel h3 {
+    border-bottom: 4px double #626262;
+    margin-bottom: 10px; }
   .nutrilabel h1 {
     font-family: 'PT Sans';
     font-size: 22px;
     line-height: 1;
-    padding: 8px 0px;
-    border-bottom: 1px solid #626262;
-    border-top: 4px double #626262; }
+    padding: 0px 0px 8px 0px;
+    border-bottom: 1px solid #626262; }
   .nutrilabel h2 {
     font-family: 'Nunito';
     font-size: 15px;

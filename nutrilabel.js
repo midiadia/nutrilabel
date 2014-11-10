@@ -3193,7 +3193,8 @@
     };
 
     htmlTemplate = '<div class="nutrilabel">\
-            <h2>INFORMACION NUTRICIONAL</h2>\
+            <h3>INFORMACION NUTRICIONAL</h3>\
+            {{#if Data.Product.Brand}}<h2 class="brand">{{Data.Product.Brand}}</h2>{{/if}}\
             <h1>{{Data.Product.Name}}</h1>\
             {{#if Data.NutritionalValuesPerUnit}}\
             <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">Ración</a></div>\
