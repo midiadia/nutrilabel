@@ -75,7 +75,7 @@
     font-family: 'PT Sans';
     padding: 0px 0px 8px 0px;
     border-bottom: 1px solid #626262;
-    margin: 0;
+    margin: 0 !important;
     line-height: 1em !important;
     font-weight: bold !important;
     letter-spacing: -1px !important;
