@@ -3197,7 +3197,7 @@
             {{#if Data.Product.Brand}}<h2 class="brand">{{Data.Product.Brand}}</h2>{{/if}}\
             <h1>{{Data.Product.Name}}</h1>\
             {{#if Data.NutritionalValuesPerUnit}}\
-            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100gr</a><a data-show="per-unit" href="#">Ración</a></div>\
+            <div class="switcher"><a href="#" data-show="per-hundred" class="selected">100{{#if Data.Product.IsLiquid}}ml{{else}}gr{{/if}}</a><a data-show="per-unit" href="#">Ración</a></div>\
             {{/if}}\
             {{#if Data.NutritionalValuesPerUnit}}\
             <div class="serving per-unit">\
@@ -3279,7 +3279,7 @@
                             <a href="#" data-change="100"><i class="fa fa-plus"></i></a>\
                             <a href="#" data-change="-100"><i class="fa fa-minus"></i></a>\
                         </div>\
-                    </div> gr\
+                    </div> {{#if Data.Product.IsLiquid}}ml{{else}}gr{{/if}}\
                 </div>\
             </div>\
             <div class="section nutritional-values per-hundred">\
