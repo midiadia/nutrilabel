@@ -1,0 +1,62 @@
+.kpi_idr {
+    font-family: Helvetica,Arial;
+    font-size: 13px;
+    background-color: #FFF;
+    border: 2px solid #BACFE6;
+    cursor: help;
+    height: 65px;
+    margin-top: 5px;
+
+    .inner {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    table {
+        color: #333;
+        font-size: 13px;
+        line-height: 18px;
+        border-collapse: collapse;
+        width: 100%;
+
+        .big {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 30px;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .medium {
+            color: #555;
+            font-size: 20px;
+            margin-bottom: 2px;
+            margin-top: 9px;
+        }
+
+        .small {
+            color: #999;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .image {
+            margin-top: 3px;
+        }
+
+        .percent {
+            float: left;
+            width: 1px;
+            height: 1px;
+            border: 1px solid #e2e2e2;
+            margin: 1px;
+
+            &.fill {
+                background: #000;
+                border: 1px solid #000;
+
+            }
+        }
+    }
+}
