@@ -3,9 +3,9 @@
     font-size: 13px;
     background-color: #FFF;
     border: 2px solid #d1d1d1;
-    cursor: help;
     height: 65px;
     margin-top: 5px;
+    width:255px;
 
     .inner {
         margin-left: 10px;
@@ -59,4 +59,60 @@
             }
         }
     }
+}
+
+.kpi_calories {
+    font-family: Helvetica,Arial;
+    font-size: 13px;
+    background-color: #FFF;
+    border: 2px solid #d1d1d1;
+    height: 65px;
+    margin-top: 5px;
+    width:255px;
+
+    .inner {
+        margin: 10px;
+    }
+    .info {
+        float:left;
+
+        font-size: 10px;
+        ul {
+            margin:0;
+            padding:0;
+        }
+        li {
+            list-style-type:none;
+
+
+        }
+        h2 {
+            font-size:12px;
+            margin: 0;
+            margin-bottom: 2px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            &.carbon {
+                background-color: #4bb89a;
+            }
+
+            &.fat {
+                background-color: #d7a701;
+            }
+
+            &.protein {
+                background-color: #b65c51;
+            }
+        }
+    }
+    
+    canvas {
+        float: right;
+    }
+
+
 }
