@@ -2,7 +2,7 @@
   font-family: Helvetica,Arial;
   font-size: 13px;
   background-color: #FFF;
-  border: 2px solid #BACFE6;
+  border: 2px solid #d1d1d1;
   cursor: help;
   height: 65px;
   margin-top: 5px; }
@@ -37,10 +37,10 @@
       float: left;
       width: 1px;
       height: 1px;
-      border: 1px solid #e2e2e2;
+      border: 1px solid #c6c6c6;
       margin: 1px; }
       .kpi_idr table .percent.fill {
-        background: #000;
-        border: 1px solid #000; }
+        background: #62b304;
+        border: 1px solid #62b304; }
 
 /*# sourceMappingURL=kpi.css.map */
