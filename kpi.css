@@ -17,7 +17,7 @@
     border-collapse: collapse;
     width: 100%; }
     .kpi_idr table .big {
-      font-size: 30px;
+      font-size: 35px;
       font-weight: 700;
       line-height: 30px;
       padding-right: 10px;
@@ -25,8 +25,8 @@
     .kpi_idr table .medium {
       color: #555;
       font-size: 20px;
-      margin-bottom: 2px;
-      margin-top: 9px; }
+      margin-bottom: 0px;
+      margin-top: 7px; }
     .kpi_idr table .small {
       color: #999;
       font-size: 12px;
