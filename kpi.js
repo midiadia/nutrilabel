@@ -44,6 +44,17 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
         $(this).html(template);
         $(this).find('.kpi_idr .image').append(html);
         $(this).find('.kpi_idr .percent:lt(' + percent + ')').addClass('fill');
+        
+         var carbon = parseInt($(this).attr('data-carbonhidratos')), fat = parseInt($(this).attr('data-grasa')), protein = parseInt($(this).attr('data-proteina'));
+         var carbon_percent=parseInt(carbon*percent/100),fat_percent=parseInt(fat*percent/100),protein_percent=parseInt(protein*percent/100);
+       
+          
+         $(this).find('.kpi_idr .percent:lt(' + percent + ')').addClass('fill');
+         $(this).find('.kpi_idr .percent.fill').slice(0,carbon_percent).addClass('carbon x');
+         $(this).find('.kpi_idr .percent.fill').slice(carbon_percent,fat_percent).addClass('fat x');
+         $(this).find('.kpi_idr .percent.fill:not(.x)').addClass('protein x');
+
+        
     };
 })(jQuery);
 ;
@@ -57,7 +68,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
                 <div class="info">\
                 <h2>Desglose de Calorías</h2>\
                 <ul>\
-                    <li><div class="box carbon"></div> Carbonhidrato (' + carbon + '%)</li>\
+                    <li><div class="box carbon"></div> Hidratos de Carbono (' + carbon + '%)</li>\
                     <li><div class="box fat"></div> Grasa (' + fat + '%)</li>\
                     <li><div class="box protein"></div> Proteina (' + protein + '%)</li>\
                 </ul>\

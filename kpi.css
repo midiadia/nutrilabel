@@ -42,6 +42,12 @@
       .kpi_idr table .percent.fill {
         background: #62b304;
         border: 1px solid #62b304; }
+        .kpi_idr table .percent.fill.carbon {
+          border-color: #4bb89a; }
+        .kpi_idr table .percent.fill.fat {
+          border-color: #d7a701; }
+        .kpi_idr table .percent.fill.protein {
+          border-color: #b65c51; }
 
 .kpi_calories {
   font-family: Helvetica,Arial;

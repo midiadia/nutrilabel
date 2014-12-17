@@ -56,6 +56,17 @@
                 background: #62b304;
                 border: 1px solid #62b304;
 
+                &.carbon {
+                    border-color: #4bb89a;
+                }
+
+                &.fat {
+                    border-color: #d7a701;
+                }
+
+                &.protein {
+                    border-color: #b65c51;
+                }
             }
         }
     }
@@ -109,7 +120,7 @@
             }
         }
     }
-    
+
     canvas {
         float: right;
     }
