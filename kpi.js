@@ -14,7 +14,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
 (function($) {
     $.fn.kpiIdr = function(option, settings) {
 
-        var cal = parseInt($(this).attr('data-cal')), percent = 100 * cal / 2000;
+        var cal = parseInt($(this).attr('data-cal')), percent = parseInt(100 * cal / 2000);
         var template = '<div class="kpi_idr"">\
             <div class="inner">\
                 <table style="border-collapse:collapse;width:100%" cellpadding="0" cellspacing="0">\
@@ -35,6 +35,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
                         </tr>\
                     </tbody></table>\
             </div>\
+            <div class="disclaimer">* Basado en un IDR de 2000 calorías</div>\
         </div>';
         var html = '';
         for (var i = 0; i < 100; i++) {
@@ -43,18 +44,22 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
 
         $(this).html(template);
         $(this).find('.kpi_idr .image').append(html);
-        $(this).find('.kpi_idr .percent:lt(' + percent + ')').addClass('fill');
+        //$(this).find('.kpi_idr .percent:lt(' + percent + ')').addClass('fill');
         
          var carbon = parseInt($(this).attr('data-carbonhidratos')), fat = parseInt($(this).attr('data-grasa')), protein = parseInt($(this).attr('data-proteina'));
          var carbon_percent=parseInt(carbon*percent/100),fat_percent=parseInt(fat*percent/100),protein_percent=parseInt(protein*percent/100);
        
           
-         $(this).find('.kpi_idr .percent:lt(' + percent + ')').addClass('fill');
-         $(this).find('.kpi_idr .percent.fill').slice(0,carbon_percent).addClass('carbon x');
-         $(this).find('.kpi_idr .percent.fill').slice(carbon_percent,fat_percent).addClass('fat x');
-         $(this).find('.kpi_idr .percent.fill:not(.x)').addClass('protein x');
+         //$(this).find('.kpi_idr .percent:lt(' + carbon_percent+fat_percent+protein_percent + ')').addClass('fill');
+         $(this).find('.kpi_idr .percent').slice(0,carbon_percent).addClass('fill carbon x');
+         $(this).find('.kpi_idr .percent').slice(carbon_percent,carbon_percent+fat_percent).addClass('fill fat x');
+          $(this).find('.kpi_idr .percent').slice(carbon_percent+fat_percent,carbon_percent+fat_percent+protein_percent).addClass('fill protein x');
+         //$(this).find('.kpi_idr .percent.fill:not(.x)').addClass('protein x');
+         
+         console.log(carbon_percent);
+         console.log(fat_percent);
+         console.log(protein_percent);
 
-        
     };
 })(jQuery);
 ;
@@ -82,20 +87,20 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
         var data = [
             {
                 value: carbon,
-                color:"#4bb89a",
-                highlight: "#FF5A5E",
+                color:"#9db321",
+                highlight: "#9db321",
                 label: "Carbonhidrato"
             },
             {
                 value: fat,
-                color: "#d7a701",
-                highlight: "#5AD3D1",
+                color: "#f24c27",
+                highlight: "#f24c27",
                 label: "Grasa"
             },
             {
                 value: protein,
-                color: "#b65c51",
-                highlight: "#FFC870",
+                color: "#0092b2",
+                highlight: "#0092b2",
                 label: "Proteina"
             }
         ];

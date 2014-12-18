@@ -3,9 +3,17 @@
     font-size: 13px;
     background-color: #FFF;
     border: 2px solid #d1d1d1;
-    height: 65px;
+
     margin-top: 5px;
     width:255px;
+
+    .disclaimer {
+        margin-right: 5px;
+        font-size: 11px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align:right;
+    }
 
     .inner {
         margin-left: 10px;
@@ -57,15 +65,18 @@
                 border: 1px solid #62b304;
 
                 &.carbon {
-                    border-color: #4bb89a;
+                    background-color: #9db321;
+                    border-color:#9db321;
                 }
 
                 &.fat {
-                    border-color: #d7a701;
+                    background-color: #f24c27;
+                    border-color:#9db321;
                 }
 
                 &.protein {
-                    border-color: #b65c51;
+                    background-color: #0092b2;
+                    border-color: #0092b2;
                 }
             }
         }
@@ -108,15 +119,15 @@
             width: 5px;
             height: 5px;
             &.carbon {
-                background-color: #4bb89a;
+                background-color: #9db321;
             }
 
             &.fat {
-                background-color: #d7a701;
+                background-color: #f24c27;
             }
 
             &.protein {
-                background-color: #b65c51;
+                background-color: #0092b2;
             }
         }
     }

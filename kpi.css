@@ -3,9 +3,14 @@
   font-size: 13px;
   background-color: #FFF;
   border: 2px solid #d1d1d1;
-  height: 65px;
   margin-top: 5px;
   width: 255px; }
+  .kpi_idr .disclaimer {
+    margin-right: 5px;
+    font-size: 11px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: right; }
   .kpi_idr .inner {
     margin-left: 10px;
     margin-right: 10px;
@@ -43,11 +48,14 @@
         background: #62b304;
         border: 1px solid #62b304; }
         .kpi_idr table .percent.fill.carbon {
-          border-color: #4bb89a; }
+          background-color: #9db321;
+          border-color: #9db321; }
         .kpi_idr table .percent.fill.fat {
-          border-color: #d7a701; }
+          background-color: #f24c27;
+          border-color: #9db321; }
         .kpi_idr table .percent.fill.protein {
-          border-color: #b65c51; }
+          background-color: #0092b2;
+          border-color: #0092b2; }
 
 .kpi_calories {
   font-family: Helvetica,Arial;
@@ -76,11 +84,11 @@
       width: 5px;
       height: 5px; }
       .kpi_calories .info .box.carbon {
-        background-color: #4bb89a; }
+        background-color: #9db321; }
       .kpi_calories .info .box.fat {
-        background-color: #d7a701; }
+        background-color: #f24c27; }
       .kpi_calories .info .box.protein {
-        background-color: #b65c51; }
+        background-color: #0092b2; }
   .kpi_calories canvas {
     float: right; }
 
