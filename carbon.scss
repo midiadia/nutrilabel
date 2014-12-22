@@ -1,0 +1,32 @@
+$end: #4b6500;
+$start: #699300;
+
+.carbon {
+    font-family:Tahoma;
+    width: 90px;
+    height: 95px;
+    background-color: $start;
+    background-image: linear-gradient($start,$end);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=$start, endColorstr=$end)";
+
+
+    color:#fff;
+    position:relative;
+    .disclaimer {
+        font-size: 12px;
+        left:0;
+        right:0;
+        bottom:0;
+        position: absolute;
+        text-align:center;
+        padding-bottom:3px;
+
+    }
+
+    .inner {
+        padding-top: 15px;fil
+        text-align:center;
+        font-size: 35px;
+    }
+}
+
