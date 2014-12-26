@@ -26,7 +26,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
                             </td>\
                             <td>\
                                 <div class="medium">de IDR*</div>\
-                                <div class="small">(' + cal + ' cal)</div>\
+                                <div class="small">(' + cal + ' kcal)</div>\
                             </td>\
                             <td width="50">\
                                 <div class="image">\
