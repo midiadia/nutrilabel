@@ -3,7 +3,7 @@
 (function($) {
     $.fn.carbon = function(option, settings) {
         var value = $(this).attr('data-value');
-        var template = '<div class="carbon"">\
+        var template = '<div class="kpi-carbon"">\
             <div class="inner">' + value + '</div>\
             <div class="disclaimer">Raciones de Carbohidratos</div>\
         </div>';
