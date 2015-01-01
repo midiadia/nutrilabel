@@ -4,7 +4,8 @@
   background-color: #FFF;
   border: 2px solid #d1d1d1;
   margin-top: 5px;
-  width: 255px; }
+  width: 255px;
+  position: relative; }
   .kpi_idr .disclaimer {
     margin-right: 5px;
     font-size: 11px;
@@ -56,15 +57,24 @@
         .kpi_idr table .percent.fill.protein {
           background-color: #0092b2;
           border-color: #0092b2; }
+  .kpi_idr .explanation {
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; }
 
 .kpi_calories {
   font-family: Helvetica,Arial;
   font-size: 13px;
   background-color: #FFF;
   border: 2px solid #d1d1d1;
-  height: 65px;
+  height: 90px;
   margin-top: 5px;
-  width: 255px; }
+  width: 255px;
+  position: relative; }
   .kpi_calories .inner {
     margin: 10px; }
   .kpi_calories .info {
@@ -91,5 +101,13 @@
         background-color: #0092b2; }
   .kpi_calories canvas {
     float: right; }
+  .kpi_calories .explanation {
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; }
 
 /*# sourceMappingURL=kpi.css.map */

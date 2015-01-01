@@ -81,6 +81,17 @@
             }
         }
     }
+
+    position: relative;
+    .explanation {
+        position: absolute;
+        left: 7px;
+        bottom: 5px;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
 
 .kpi_calories {
@@ -88,7 +99,7 @@
     font-size: 13px;
     background-color: #FFF;
     border: 2px solid #d1d1d1;
-    height: 65px;
+    height: 90px;
     margin-top: 5px;
     width:255px;
 
@@ -136,5 +147,14 @@
         float: right;
     }
 
-
+    position: relative;
+    .explanation {
+        position: absolute;
+        left: 7px;
+        bottom: 5px;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
