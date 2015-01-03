@@ -5,7 +5,8 @@
   border: 2px solid #d1d1d1;
   margin-top: 5px;
   width: 255px;
-  position: relative; }
+  position: relative;
+  padding-top: 20px; }
   .kpi_idr .disclaimer {
     margin-right: 5px;
     font-size: 11px;
@@ -59,8 +60,8 @@
           border-color: #0092b2; }
   .kpi_idr .explanation {
     position: absolute;
-    left: 7px;
-    bottom: 5px;
+    right: 7px;
+    top: 5px;
     display: block;
     font-size: 16px;
     font-weight: bold;
@@ -74,7 +75,8 @@
   height: 90px;
   margin-top: 5px;
   width: 255px;
-  position: relative; }
+  position: relative;
+  padding-top: 20px; }
   .kpi_calories .inner {
     margin: 10px; }
   .kpi_calories .info {
@@ -103,8 +105,8 @@
     float: right; }
   .kpi_calories .explanation {
     position: absolute;
-    left: 7px;
-    bottom: 5px;
+    right: 7px;
+    top: 5px;
     display: block;
     font-size: 16px;
     font-weight: bold;

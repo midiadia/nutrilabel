@@ -16,7 +16,7 @@ $start: #699300;
         font-size: 12px;
         left:0;
         right:0;
-        bottom:22px;
+        bottom:10px;
         position: absolute;
         text-align:center;
         padding-bottom:3px;
@@ -24,7 +24,7 @@ $start: #699300;
     }
 
     .inner {
-        padding-top: 15px;
+        padding-top: 25px;
         text-align:center;
         font-size: 35px;
     }
@@ -35,11 +35,10 @@ $start: #699300;
         font-weight: bold;
         cursor: pointer;
         position: absolute;
-        bottom: 3px;
+        top: 3px;
         left: 0;
-        right: 0;
-        width: 100%;
-        text-align: center;
+        right: 10px;
+        text-align: right;
     }
 }
 

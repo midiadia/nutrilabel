@@ -36,7 +36,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
                     </tbody></table>\
             </div>\
             <div class="explanation" title="La Ingesta Diaria Recomendada (IDR) es la cantidad de energía que una persona sana debe ingerir, por término medio, cada día, para mantener un buen estado de salud. La Organización Mundial de la Salud (OMS) establece este baremo en 2.000Kcal.Este es el porcentaje de energía qua aporta este producto para una dieta diaria de 2.000Kcal.">?</div>\
-            <div class="disclaimer">* Basado en un IDR de 2000 calorías</div>\
+            <div class="disclaimer">* Basado en un IDR de 2000 kilocalorías</div>\
         </div>';
         var html = '';
         for (var i = 0; i < 100; i++) {
