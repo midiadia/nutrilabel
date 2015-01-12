@@ -1,4 +1,4 @@
-Midíadía Nutrition Label
+Midíadía Widgets
 =========
 
 With this small set of jQuery plugin sets, you can add a nutritional values label, carbohydrates servings and energy information (kilocalories and  percentage for each product’s macronutrient) in your site using Midíadía's API result.
