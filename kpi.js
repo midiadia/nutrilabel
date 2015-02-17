@@ -67,9 +67,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
 
         var carbon = parseInt($(this).attr('data-carbonhidratos')), fat = parseInt($(this).attr('data-grasa')), protein = parseInt($(this).attr('data-proteina'));
         
-        if(!carbon || !fat || !protein) {
-            return;
-        }
+        
         
         var template = '<div class="kpi_calories">\
             <div class="inner">\
